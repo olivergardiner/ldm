@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_P1NDwHvGEeSeN6oPwrOgqQ/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_P1NDwHvGEeSeN6oPwrOgqQ/3 ldm.profile.uml#_P1Nq0HvGEeSeN6oPwrOgqQ">
   <uml:Model xmi:id="_SsSUsHu9EeSeN6oPwrOgqQ" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gp2zEHvOEeSeN6oPwrOgqQ">
+      <importedPackage xmi:type="uml:Model" href="ldm.datatypes.uml#_2BBpIHvHEeSeN6oPwrOgqQ"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_kGqKwHvGEeSeN6oPwrOgqQ" name="HumanResources">
       <packagedElement xmi:type="uml:Class" xmi:id="_nXEyoHvGEeSeN6oPwrOgqQ" name="Employee"/>
     </packagedElement>
