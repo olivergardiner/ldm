@@ -5,4 +5,5 @@
   </packageImport>
   <packagedElement xmi:type="uml:DataType" xmi:id="_7PvJsHvHEeSeN6oPwrOgqQ" name="Date"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_IYP4EHvIEeSeN6oPwrOgqQ" name="Time"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_nIk9MJJ7EeS5MpH8qzp8Sg" name="UUID"/>
 </uml:Model>
