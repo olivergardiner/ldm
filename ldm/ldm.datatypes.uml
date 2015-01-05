@@ -5,5 +5,8 @@
   </packageImport>
   <packagedElement xmi:type="uml:DataType" xmi:id="_7PvJsHvHEeSeN6oPwrOgqQ" name="Date"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_IYP4EHvIEeSeN6oPwrOgqQ" name="Time"/>
-  <packagedElement xmi:type="uml:DataType" xmi:id="_nIk9MJJ7EeS5MpH8qzp8Sg" name="UUID"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_nIk9MJJ7EeS5MpH8qzp8Sg" name="UUID">
+    <generalization xmi:type="uml:Generalization" xmi:id="_J-jsIJTCEeSe2oMKyYakCA" general="_9WHk8JTBEeSe2oMKyYakCA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_9WHk8JTBEeSe2oMKyYakCA" name="Key"/>
 </uml:Model>

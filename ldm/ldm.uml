@@ -4,6 +4,21 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_gp2zEHvOEeSeN6oPwrOgqQ">
       <importedPackage xmi:type="uml:Model" href="ldm.datatypes.uml#_2BBpIHvHEeSeN6oPwrOgqQ"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0-lHsJTAEeSe2oMKyYakCA" name="ReferenceData">
+      <packagedElement xmi:type="uml:Package" xmi:id="_8XDKEJTAEeSe2oMKyYakCA" name="HumanResources">
+        <packagedElement xmi:type="uml:Class" xmi:id="_uJ8gQJTCEeSe2oMKyYakCA" name="PositionRelationshipType">
+          <generalization xmi:type="uml:Generalization" xmi:id="_II8Y4JTDEeSe2oMKyYakCA" general="_G_E4sJTBEeSe2oMKyYakCA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_G_E4sJTBEeSe2oMKyYakCA" name="ControlledVocabulary" isAbstract="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iwfKIJTBEeSe2oMKyYakCA" name="code">
+          <type xmi:type="uml:DataType" href="ldm.datatypes.uml#_9WHk8JTBEeSe2oMKyYakCA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lmRrgJTBEeSe2oMKyYakCA" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_kGqKwHvGEeSeN6oPwrOgqQ" name="HumanResources">
       <packagedElement xmi:type="uml:Package" xmi:id="_ZEHugJJ8EeS5MpH8qzp8Sg" name="Employee">
         <packagedElement xmi:type="uml:Class" xmi:id="_nXEyoHvGEeSeN6oPwrOgqQ" name="Employee">
@@ -27,7 +42,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eAfvoJKBEeS5MpH8qzp8Sg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAgWsJKBEeS5MpH8qzp8Sg" value="*"/>
           </ownedAttribute>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_eAg9wZKBEeS5MpH8qzp8Sg" name="realcostincurringobject" type="_nnJBIJJ-EeS5MpH8qzp8Sg" association="_eAg9wJKBEeS5MpH8qzp8Sg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_eAg9wZKBEeS5MpH8qzp8Sg" name="fundingSource" type="_nnJBIJJ-EeS5MpH8qzp8Sg" association="_eAg9wJKBEeS5MpH8qzp8Sg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eAg9wpKBEeS5MpH8qzp8Sg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAg9w5KBEeS5MpH8qzp8Sg" value="*"/>
           </ownedEnd>
@@ -101,6 +116,17 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06L8ZJ9EeS5MpH8qzp8Sg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06L8pJ9EeS5MpH8qzp8Sg" value="1"/>
           </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_4rNm8pS_EeSe2oMKyYakCA" name="PositionPositionRelationship" memberEnd="_4rNm85S_EeSe2oMKyYakCA _4rEdAJS_EeSe2oMKyYakCA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rEdAJS_EeSe2oMKyYakCA" name="from" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm8JS_EeSe2oMKyYakCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm8ZS_EeSe2oMKyYakCA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rNm85S_EeSe2oMKyYakCA" name="to" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm9JS_EeSe2oMKyYakCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm9ZS_EeSe2oMKyYakCA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f8fN8JTAEeSe2oMKyYakCA" name="positionRelationshipType" type="_uJ8gQJTCEeSe2oMKyYakCA"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -184,4 +210,12 @@
   <Profile:Entity xmi:id="_JaFk8JKEEeS5MpH8qzp8Sg" base_Class="_5qs68JKDEeS5MpH8qzp8Sg"/>
   <Profile:Entity xmi:id="_KjO-UJKEEeS5MpH8qzp8Sg" base_Class="_EiYPIJKEEeS5MpH8qzp8Sg"/>
   <Profile:Entity xmi:id="_Lkow8JKEEeS5MpH8qzp8Sg" base_Class="_nxBjoJKDEeS5MpH8qzp8Sg"/>
+  <Profile:Entity xmi:id="_HCsp4JTAEeSe2oMKyYakCA" base_Class="_4rNm8pS_EeSe2oMKyYakCA"/>
+  <Profile:ReferenceType xmi:id="_ipiqEJTAEeSe2oMKyYakCA" base_Property="_f8fN8JTAEeSe2oMKyYakCA"/>
+  <Profile:ReferenceEntity xmi:id="_KuCdwJTBEeSe2oMKyYakCA" base_Class="_G_E4sJTBEeSe2oMKyYakCA"/>
+  <Profile:SimpleType xmi:id="_eU6hQJTCEeSe2oMKyYakCA" base_Property="_lmRrgJTBEeSe2oMKyYakCA"/>
+  <Profile:EntityLabel xmi:id="_eVDrMJTCEeSe2oMKyYakCA" base_Property="_lmRrgJTBEeSe2oMKyYakCA"/>
+  <Profile:SimpleType xmi:id="_kmX4QJTCEeSe2oMKyYakCA" base_Property="_iwfKIJTBEeSe2oMKyYakCA"/>
+  <Profile:CanonicalId xmi:id="_Wh8UMJTCEeSe2oMKyYakCA" base_Property="_iwfKIJTBEeSe2oMKyYakCA"/>
+  <Profile:ReferenceEntity xmi:id="_MsBigJTDEeSe2oMKyYakCA" base_Class="_uJ8gQJTCEeSe2oMKyYakCA"/>
 </xmi:XMI>
