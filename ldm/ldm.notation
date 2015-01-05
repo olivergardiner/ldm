@@ -2207,25 +2207,6 @@
       <element xmi:type="uml:Generalization" href="ldm.uml#_GFl84JTKEeSe2oMKyYakCA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K529IpTKEeSe2oMKyYakCA" points="[0, -50, 184, 173]$[0, -107, 184, 116]$[-184, -107, 0, 116]$[-184, -173, 0, 50]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_Q9VigZTKEeSe2oMKyYakCA" type="4002" source="_wqVVMZTJEeSe2oMKyYakCA" target="_awtBYZTHEeSe2oMKyYakCA" routing="Tree">
-      <children xmi:type="notation:DecorationNode" xmi:id="_Q9VihJTKEeSe2oMKyYakCA" type="6007">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Q9VihZTKEeSe2oMKyYakCA" y="40"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_Q9VigpTKEeSe2oMKyYakCA"/>
-      <element xmi:type="uml:Generalization" href="ldm.uml#_Q9VigJTKEeSe2oMKyYakCA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q9Vig5TKEeSe2oMKyYakCA" points="[0, -14, 408, 195]$[0, -61, 408, 148]$[-408, -61, 0, 148]$[-408, -136, 0, 73]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q9fTgJTKEeSe2oMKyYakCA" id="(0.20209059233449478,0.14)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_TrwQkJTKEeSe2oMKyYakCA" type="4002" source="_iXFSAZTJEeSe2oMKyYakCA" target="_awtBYZTHEeSe2oMKyYakCA" routing="Tree">
-      <children xmi:type="notation:DecorationNode" xmi:id="_TrwQk5TKEeSe2oMKyYakCA" type="6007">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_TrwQlJTKEeSe2oMKyYakCA" y="40"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_TrwQkZTKEeSe2oMKyYakCA"/>
-      <element xmi:type="uml:Generalization" href="ldm.uml#_QRskgJTKEeSe2oMKyYakCA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TrwQkpTKEeSe2oMKyYakCA" points="[0, -50, -511, 195]$[0, -97, -511, 148]$[511, -97, 0, 148]$[511, -172, 0, 73]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_w6kJTKEeSe2oMKyYakCA" id="(0.49825783972125437,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_w6kZTKEeSe2oMKyYakCA" id="(0.49825783972125437,1.0)"/>
-    </edges>
     <edges xmi:type="notation:Connector" xmi:id="_izfrwJTKEeSe2oMKyYakCA" type="4002" source="_YVSAcZTKEeSe2oMKyYakCA" target="_iXFSAZTJEeSe2oMKyYakCA" routing="Tree">
       <children xmi:type="notation:DecorationNode" xmi:id="_izfrw5TKEeSe2oMKyYakCA" type="6007">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_izfrxJTKEeSe2oMKyYakCA" y="40"/>
@@ -2281,6 +2262,22 @@
       <element xmi:type="uml:Generalization" href="ldm.uml#_ETvIQJTLEeSe2oMKyYakCA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ETvIQ5TLEeSe2oMKyYakCA" points="[-55, 24, 65, 403]$[-127, 24, -7, 403]$[-127, -322, -7, 57]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ETvIRpTLEeSe2oMKyYakCA" id="(0.1916376306620209,0.28)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_XlFD0JTQEeSe2oMKyYakCA" type="4002" source="_iXFSAZTJEeSe2oMKyYakCA" target="_awtBYZTHEeSe2oMKyYakCA" routing="Tree">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XlFD05TQEeSe2oMKyYakCA" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XlONwJTQEeSe2oMKyYakCA" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_XlFD0ZTQEeSe2oMKyYakCA"/>
+      <element xmi:type="uml:Generalization" href="ldm.uml#_QRskgJTKEeSe2oMKyYakCA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XlFD0pTQEeSe2oMKyYakCA" points="[0, -50, -455, 195]$[0, -99, -455, 146]$[455, -99, 0, 146]$[455, -172, 0, 73]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_YC3MAJTQEeSe2oMKyYakCA" type="4002" source="_wqVVMZTJEeSe2oMKyYakCA" target="_awtBYZTHEeSe2oMKyYakCA" routing="Tree">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YC3MA5TQEeSe2oMKyYakCA" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YC3MBJTQEeSe2oMKyYakCA" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YC3MAZTQEeSe2oMKyYakCA"/>
+      <element xmi:type="uml:Generalization" href="ldm.uml#_Q9VigJTKEeSe2oMKyYakCA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YC3MApTQEeSe2oMKyYakCA" points="[0, -50, 493, 195]$[0, -99, 493, 146]$[-493, -99, 0, 146]$[-493, -172, 0, 73]"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_IQJ3UJTHEeSe2oMKyYakCA" type="PapyrusUMLClassDiagram" name="Finance: Accounting" measurementUnit="Pixel">
