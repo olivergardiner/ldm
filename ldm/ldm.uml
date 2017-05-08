@@ -68,6 +68,51 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_kGqKwHvGEeSeN6oPwrOgqQ" name="HumanResources">
+      <packagedElement xmi:type="uml:Package" xmi:id="_a6bv4JJ8EeS5MpH8qzp8Sg" name="Organisation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ed4BcJJ8EeS5MpH8qzp8Sg" name="OrganisationUnit"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gpN3oJJ8EeS5MpH8qzp8Sg" name="Position"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_26V64JJ9EeS5MpH8qzp8Sg" name="ouDefaultFundedByCostCentre" memberEnd="_26V64ZJ9EeS5MpH8qzp8Sg _26TeoJJ9EeS5MpH8qzp8Sg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_26V64ZJ9EeS5MpH8qzp8Sg" name="costCentre" type="_tNGZgJJ9EeS5MpH8qzp8Sg" association="_26V64JJ9EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26V64pJ9EeS5MpH8qzp8Sg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_26V645J9EeS5MpH8qzp8Sg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_26TeoJJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_26V64JJ9EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26TeoZJ9EeS5MpH8qzp8Sg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_26TeopJ9EeS5MpH8qzp8Sg" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3e-ucJJ8EeS5MpH8qzp8Sg" name="positionPartOfOU" memberEnd="_3e-ucZJ8EeS5MpH8qzp8Sg _3e9gUJJ8EeS5MpH8qzp8Sg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3e-ucZJ8EeS5MpH8qzp8Sg" name="position" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_3e-ucJJ8EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e-ucpJ8EeS5MpH8qzp8Sg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3e-uc5J8EeS5MpH8qzp8Sg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3e9gUJJ8EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_3e-ucJJ8EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e-HYJJ8EeS5MpH8qzp8Sg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3e-HYZJ8EeS5MpH8qzp8Sg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_e06zAJJ9EeS5MpH8qzp8Sg" name="ouParentOU" memberEnd="_e06zAZJ9EeS5MpH8qzp8Sg _e06L8JJ9EeS5MpH8qzp8Sg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_e06zAZJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_e06zAJJ9EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06zApJ9EeS5MpH8qzp8Sg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06zA5J9EeS5MpH8qzp8Sg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_e06L8JJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_e06zAJJ9EeS5MpH8qzp8Sg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06L8ZJ9EeS5MpH8qzp8Sg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06L8pJ9EeS5MpH8qzp8Sg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_4rNm8pS_EeSe2oMKyYakCA" name="PositionPositionRelationship" memberEnd="_4rNm85S_EeSe2oMKyYakCA _4rEdAJS_EeSe2oMKyYakCA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rEdAJS_EeSe2oMKyYakCA" name="from" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm8JS_EeSe2oMKyYakCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm8ZS_EeSe2oMKyYakCA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rNm85S_EeSe2oMKyYakCA" name="to" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm9JS_EeSe2oMKyYakCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm9ZS_EeSe2oMKyYakCA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f8fN8JTAEeSe2oMKyYakCA" name="positionRelationshipType" type="_uJ8gQJTCEeSe2oMKyYakCA"/>
+        </packagedElement>
+      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ZEHugJJ8EeS5MpH8qzp8Sg" name="Employee">
         <packagedElement xmi:type="uml:Class" xmi:id="_nXEyoHvGEeSeN6oPwrOgqQ" name="Employee">
           <generalization xmi:type="uml:Generalization" xmi:id="_GOilEJJ7EeS5MpH8qzp8Sg" general="_tEq6cJJ2EeS5MpH8qzp8Sg"/>
@@ -131,54 +176,303 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_EiYPIJKEEeS5MpH8qzp8Sg" name="SinglePaymentAward">
           <generalization xmi:type="uml:Generalization" xmi:id="_ZH46kJKEEeS5MpH8qzp8Sg" general="_3toxUJKDEeS5MpH8qzp8Sg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SQ9r8GwCEeWjk67kw5SSNA" informationSource="_nxBjoJKDEeS5MpH8qzp8Sg" informationTarget="_3YwLWWtwEeWjk67kw5SSNA"/>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Sz6A8GwCEeWjk67kw5SSNA" informationSource="_EiYPIJKEEeS5MpH8qzp8Sg" informationTarget="_3YwLX2twEeWjk67kw5SSNA"/>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UQ0D0GwCEeWjk67kw5SSNA" informationSource="_5qs68JKDEeS5MpH8qzp8Sg" informationTarget="_3YwLXGtwEeWjk67kw5SSNA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_a6bv4JJ8EeS5MpH8qzp8Sg" name="Organisation">
-        <packagedElement xmi:type="uml:Class" xmi:id="_ed4BcJJ8EeS5MpH8qzp8Sg" name="OrganisationUnit"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_gpN3oJJ8EeS5MpH8qzp8Sg" name="Position"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_26V64JJ9EeS5MpH8qzp8Sg" name="ouDefaultFundedByCostCentre" memberEnd="_26V64ZJ9EeS5MpH8qzp8Sg _26TeoJJ9EeS5MpH8qzp8Sg">
-          <ownedEnd xmi:type="uml:Property" xmi:id="_26V64ZJ9EeS5MpH8qzp8Sg" name="costCentre" type="_tNGZgJJ9EeS5MpH8qzp8Sg" association="_26V64JJ9EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26V64pJ9EeS5MpH8qzp8Sg" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_26V645J9EeS5MpH8qzp8Sg" value="1"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_26TeoJJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_26V64JJ9EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26TeoZJ9EeS5MpH8qzp8Sg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_26TeopJ9EeS5MpH8qzp8Sg" value="*"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_3e-ucJJ8EeS5MpH8qzp8Sg" name="positionPartOfOU" memberEnd="_3e-ucZJ8EeS5MpH8qzp8Sg _3e9gUJJ8EeS5MpH8qzp8Sg">
-          <ownedEnd xmi:type="uml:Property" xmi:id="_3e-ucZJ8EeS5MpH8qzp8Sg" name="position" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_3e-ucJJ8EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e-ucpJ8EeS5MpH8qzp8Sg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3e-uc5J8EeS5MpH8qzp8Sg" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_3e9gUJJ8EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_3e-ucJJ8EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e-HYJJ8EeS5MpH8qzp8Sg" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3e-HYZJ8EeS5MpH8qzp8Sg" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_e06zAJJ9EeS5MpH8qzp8Sg" name="ouParentOU" memberEnd="_e06zAZJ9EeS5MpH8qzp8Sg _e06L8JJ9EeS5MpH8qzp8Sg">
-          <ownedEnd xmi:type="uml:Property" xmi:id="_e06zAZJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_e06zAJJ9EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06zApJ9EeS5MpH8qzp8Sg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06zA5J9EeS5MpH8qzp8Sg" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_e06L8JJ9EeS5MpH8qzp8Sg" name="organisationUnit" type="_ed4BcJJ8EeS5MpH8qzp8Sg" association="_e06zAJJ9EeS5MpH8qzp8Sg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06L8ZJ9EeS5MpH8qzp8Sg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06L8pJ9EeS5MpH8qzp8Sg" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_4rNm8pS_EeSe2oMKyYakCA" name="PositionPositionRelationship" memberEnd="_4rNm85S_EeSe2oMKyYakCA _4rEdAJS_EeSe2oMKyYakCA">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rEdAJS_EeSe2oMKyYakCA" name="from" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm8JS_EeSe2oMKyYakCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm8ZS_EeSe2oMKyYakCA" value="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_3YtvAGtwEeWjk67kw5SSNA" name="ContingentWorker">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YtvCWtwEeWjk67kw5SSNA" name="FreelancerBooking">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvCmtwEeWjk67kw5SSNA" annotatedElement="_3YtvCWtwEeWjk67kw5SSNA">
+            <body>This is a Freelance enagement - aka Booking - which uses a one of the four types of Freelance Worker Types -  Freelance: PAYE (formerly Casuals); Freelance: Modus Operandi; Freelance: Service Companies; Freelance: Self-Employed.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvC2twEeWjk67kw5SSNA" name="vatApplicable" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvDGtwEeWjk67kw5SSNA" annotatedElement="_3YtvC2twEeWjk67kw5SSNA">
+              <body>This indicates whether or not the payment for the items to be delivered by the engagement are subject to VAT or not (True = subject to VAT)</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#Ud17b7e0e-554a-4030-bed0-130e476af754"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4rNm85S_EeSe2oMKyYakCA" name="to" type="_gpN3oJJ8EeS5MpH8qzp8Sg" association="_4rNm8pS_EeSe2oMKyYakCA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rNm9JS_EeSe2oMKyYakCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rNm9ZS_EeSe2oMKyYakCA" value="*"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvDWtwEeWjk67kw5SSNA" name="jobTitle">
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U2974276a-0e63-4ad8-80da-50ff897cff86"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_f8fN8JTAEeSe2oMKyYakCA" name="positionRelationshipType" type="_uJ8gQJTCEeSe2oMKyYakCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvDmtwEeWjk67kw5SSNA" name="modusJobType">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc6324155-e68e-42bc-9d0c-31e8236918ea"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvD2twEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvEGtwEeWjk67kw5SSNA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YtvEWtwEeWjk67kw5SSNA" name="HRPerson_FreelanceAgreement" memberEnd="_3YtvEmtwEeWjk67kw5SSNA _3YtvFWtwEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvEmtwEeWjk67kw5SSNA" name="hasAgreed" type="_3YtvcWtwEeWjk67kw5SSNA" association="_3YtvEWtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvE2twEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvFGtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvFWtwEeWjk67kw5SSNA" name="isFor" type="_3YtvaWtwEeWjk67kw5SSNA" association="_3YtvEWtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvFmtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvF2twEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YtvGGtwEeWjk67kw5SSNA" name="freelanceAgreement_freelanceEngagement_1" memberEnd="_3YtvGWtwEeWjk67kw5SSNA _3YtvHGtwEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvGWtwEeWjk67kw5SSNA" name="freelanceAgreement" type="_3YtvaWtwEeWjk67kw5SSNA" association="_3YtvGGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvGmtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvG2twEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvHGtwEeWjk67kw5SSNA" name="freelanceEngagement" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3YtvGGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvHWtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvHmtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YtvL2twEeWjk67kw5SSNA" name="freelanceEngagement_scheduledPayment" memberEnd="_3YtvMGtwEeWjk67kw5SSNA _3YtvM2twEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvMGtwEeWjk67kw5SSNA" name="agreedUnder" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3YtvL2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvMWtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvMmtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvM2twEeWjk67kw5SSNA" name="componentOf" type="_3YtvS2twEeWjk67kw5SSNA" association="_3YtvL2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvNGtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvNWtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YtvS2twEeWjk67kw5SSNA" name="FreelancerBookingComponent">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvTGtwEeWjk67kw5SSNA" name="engagementUnitApplicable" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvTWtwEeWjk67kw5SSNA" annotatedElement="_3YtvTGtwEeWjk67kw5SSNA">
+              <body>The unit which forms the basis of the engagement.  e.g. The engagement is based on a per hour, or per day, or per week, per month or per Job basis. </body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc2b250b6-3b06-485f-a827-a61965b0e1a0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvTmtwEeWjk67kw5SSNA" name="vatRateApplicable" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvT2twEeWjk67kw5SSNA" annotatedElement="_3YtvTmtwEeWjk67kw5SSNA">
+              <body>This is the % VAT rate applicable - if relevant - to this item.  Thus, a value of 20 against a 'Pay' of £1000.00 would be £200.00.  Note that if VAT is applicable to an engagement the rate applicable to each item to be delivered may be different.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U729327eb-f02a-46ec-b0c2-950f3d8e7ed9"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvUGtwEeWjk67kw5SSNA" name="pay" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvUWtwEeWjk67kw5SSNA" annotatedElement="_3YtvUGtwEeWjk67kw5SSNA">
+              <body>The is the pay (a currency and an amount) for this entire booking item.  For example, a four week booking may be paid £1000 for the whole four weeks.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvUmtwEeWjk67kw5SSNA" name="engagementUnitsSupplied" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvU2twEeWjk67kw5SSNA" annotatedElement="_3YtvUmtwEeWjk67kw5SSNA">
+              <body>The number of 'engagement units' (hours, days, etc depending on the Engagement Unit applicable) supplied during the engagement.  This number may only be 'correct' after the end of the engagement and will depend on the appropriate manager updating the record. </body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U729327eb-f02a-46ec-b0c2-950f3d8e7ed9"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YtvVGtwEeWjk67kw5SSNA" name="A_freelancerBookingComponent_expenseClaim_1" memberEnd="_3YtvVWtwEeWjk67kw5SSNA _3YtvWGtwEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvVWtwEeWjk67kw5SSNA" name="freelancerBookingComponent" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3YtvVGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvVmtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvV2twEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvWGtwEeWjk67kw5SSNA" name="expenseClaim" type="_3YvkOGtwEeWjk67kw5SSNA" association="_3YtvVGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvWWtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvWmtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YtvW2twEeWjk67kw5SSNA" name="A_freelancerBooking_job_1" memberEnd="_3YtvXGtwEeWjk67kw5SSNA _3YtvX2twEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvXGtwEeWjk67kw5SSNA" name="freelancerBooking" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3YtvW2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvXWtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvXmtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvX2twEeWjk67kw5SSNA" name="booker" type="_F37J8JJ9EeS5MpH8qzp8Sg" association="_3YtvW2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvYGtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvYWtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3YtvYmtwEeWjk67kw5SSNA" name="BookingFunding" memberEnd="_3YtvZmtwEeWjk67kw5SSNA _3YtvY2twEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvY2twEeWjk67kw5SSNA" name="freelancerbooking" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3YtvYmtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvZGtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvZWtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvZmtwEeWjk67kw5SSNA" name="realcostincurringobject" association="_3YtvYmtwEeWjk67kw5SSNA">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#_WtUUAF6CEeOPIuj-0FQZ4g"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvZ2twEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvaGtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YtvaWtwEeWjk67kw5SSNA" name="FreelanceAgreement">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvamtwEeWjk67kw5SSNA" annotatedElement="_3YtvaWtwEeWjk67kw5SSNA">
+            <body>This is a freelance agreement which has been agreed with a specific person.    If a person takes an engagement with a Workforce Type of FREELANCE that engagement must be covered by a Freelance Agreement.  A person may accrue more than one type (sub-type) of freelance agreement over time.  </body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3Ytva2twEeWjk67kw5SSNA" name="startDate" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvbGtwEeWjk67kw5SSNA" annotatedElement="_3Ytva2twEeWjk67kw5SSNA">
+              <body>The date on which the Freelance Agreement became valid.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U70b5c835-6177-40ac-9341-6e1aa5b48f7f"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvbWtwEeWjk67kw5SSNA" name="agreementSubType" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvbmtwEeWjk67kw5SSNA" annotatedElement="_3YtvbWtwEeWjk67kw5SSNA">
+              <body>This reference attribute identifies the sub-types of Freelance Agreement    There are two Types of Freelance Agreement: Worker and Self-Employed.  Each of these types of agreement has two sub-types: Type WORKER has  Worker - MODUS; Worker - Casual;  Type Self-Employed has Self-Employed - Individual; Self-Employed - Service Company.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#U2a493180-0df8-45d3-8994-f988e96157ac"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3Ytvb2twEeWjk67kw5SSNA" name="endDate" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvcGtwEeWjk67kw5SSNA" annotatedElement="_3Ytvb2twEeWjk67kw5SSNA">
+              <body>The last date on which the Freelance Agreement was valid.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U70b5c835-6177-40ac-9341-6e1aa5b48f7f"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YtvcWtwEeWjk67kw5SSNA" name="Freelancer">
+          <generalization xmi:type="uml:Generalization" xmi:id="_D47R0GtyEeWjk67kw5SSNA" general="_tEq6cJJ2EeS5MpH8qzp8Sg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3Ytvc2twEeWjk67kw5SSNA" name="A_freelancerBooking_freelancer_1" memberEnd="_3YtvdGtwEeWjk67kw5SSNA _3Ytvd2twEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YtvdGtwEeWjk67kw5SSNA" name="freelancerBooking" type="_3YtvCWtwEeWjk67kw5SSNA" association="_3Ytvc2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvdWtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvdmtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3Ytvd2twEeWjk67kw5SSNA" name="freelancer" type="_3YtvcWtwEeWjk67kw5SSNA" association="_3Ytvc2twEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtveGtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtveWtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3YtvemtwEeWjk67kw5SSNA" name="InformationFlow1" informationSource="_3YtvcWtwEeWjk67kw5SSNA" informationTarget="_3YvkR2twEeWjk67kw5SSNA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_3YvkMGtwEeWjk67kw5SSNA" name="Payroll">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YvkOGtwEeWjk67kw5SSNA" name="ExpenseClaim">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3YvkOWtwEeWjk67kw5SSNA" general="_3YvkOmtwEeWjk67kw5SSNA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YvkOmtwEeWjk67kw5SSNA" name="PaymentClaim" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YvkO2twEeWjk67kw5SSNA" name="ClaimElement">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3YvkPGtwEeWjk67kw5SSNA" annotatedElement="_3YvkO2twEeWjk67kw5SSNA">
+            <body>A claim element defines one of a number of types of payment that may be claimed within a payment claim. The type of the claim element allows business rules to be applied in order to determine, e.g., applicability of tax</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_3YvkPWtwEeWjk67kw5SSNA" general="_3YvkOmtwEeWjk67kw5SSNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YvkPmtwEeWjk67kw5SSNA" name="claimElementType">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#_-XO3QNnCEeO1grNbBkLHlQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YvkP2twEeWjk67kw5SSNA" name="value">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YvkQGtwEeWjk67kw5SSNA" name="claimElement_claim_1" memberEnd="_3YvkQWtwEeWjk67kw5SSNA _3YvkRGtwEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YvkQWtwEeWjk67kw5SSNA" name="claimElement" type="_3YvkO2twEeWjk67kw5SSNA" association="_3YvkQGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YvkQmtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YvkQ2twEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YvkRGtwEeWjk67kw5SSNA" name="claim" type="_3YvkOmtwEeWjk67kw5SSNA" association="_3YvkQGtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YvkRWtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YvkRmtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YvkR2twEeWjk67kw5SSNA" name="PayrollPerson">
+          <generalization xmi:type="uml:Generalization" xmi:id="_GkpEMGwBEeWjk67kw5SSNA" general="_tEq6cJJ2EeS5MpH8qzp8Sg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YvkSWtwEeWjk67kw5SSNA" name="salary">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YvkSmtwEeWjk67kw5SSNA" name="isActive">
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#Ud17b7e0e-554a-4030-bed0-130e476af754"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YvkUmtwEeWjk67kw5SSNA" name="A_payrollPerson_payrollPersonEvent_1" memberEnd="_3YwLQGtwEeWjk67kw5SSNA _3YwLQ2twEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YwLQGtwEeWjk67kw5SSNA" name="payrollPerson" type="_3YvkR2twEeWjk67kw5SSNA" association="_3YvkUmtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YwLQWtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YwLQmtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YwLQ2twEeWjk67kw5SSNA" name="payrollPersonEvent" type="_3YwLVmtwEeWjk67kw5SSNA" association="_3YvkUmtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YwLRGtwEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YwLRWtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3YwLRmtwEeWjk67kw5SSNA" name="A_payrollPerson_payrollPayment_1" memberEnd="_3YwLR2twEeWjk67kw5SSNA _3YwLSmtwEeWjk67kw5SSNA">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YwLR2twEeWjk67kw5SSNA" name="payrollPerson" type="_3YvkR2twEeWjk67kw5SSNA" association="_3YwLRmtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YwLSGtwEeWjk67kw5SSNA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YwLSWtwEeWjk67kw5SSNA" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3YwLSmtwEeWjk67kw5SSNA" name="payrollPayment" type="_3YwLY2twEeWjk67kw5SSNA" association="_3YwLRmtwEeWjk67kw5SSNA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YwLS2twEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YwLTGtwEeWjk67kw5SSNA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3YwLVWtwEeWjk67kw5SSNA" name="InformationFlow2" informationSource="_3YvkOmtwEeWjk67kw5SSNA" informationTarget="_3YwLX2twEeWjk67kw5SSNA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLVmtwEeWjk67kw5SSNA" name="PayrollPersonEvent" isAbstract="true">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YwLV2twEeWjk67kw5SSNA" name="effectiveDate">
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U70b5c835-6177-40ac-9341-6e1aa5b48f7f"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLWWtwEeWjk67kw5SSNA" name="SalaryChangeEvent">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3YwLWmtwEeWjk67kw5SSNA" general="_3YwLVmtwEeWjk67kw5SSNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YwLW2twEeWjk67kw5SSNA" name="newSalary">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLXGtwEeWjk67kw5SSNA" name="ActiveStatusEvent">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3YwLXWtwEeWjk67kw5SSNA" general="_3YwLVmtwEeWjk67kw5SSNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YwLXmtwEeWjk67kw5SSNA" name="activeStatus"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLX2twEeWjk67kw5SSNA" name="SinglePaymentEvent">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3YwLYGtwEeWjk67kw5SSNA" general="_3YwLVmtwEeWjk67kw5SSNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YwLYWtwEeWjk67kw5SSNA" name="value">
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YwLYmtwEeWjk67kw5SSNA" name="paymentType"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLY2twEeWjk67kw5SSNA" name="PayrollPayment"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YtvH2twEeWjk67kw5SSNA" name="ScheduledPayment">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvIGtwEeWjk67kw5SSNA" annotatedElement="_3YtvH2twEeWjk67kw5SSNA">
+            <body>This is a payment scheduled for the engagement.  Please note that all freelance payments fall into the 'Additional Salary Payment' class.  Please note that all payments under a single engagement will contain elements from each of the booking items associated with that engagement.  </body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_SsoGgGv9EeWjk67kw5SSNA" general="_3YvkOmtwEeWjk67kw5SSNA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvIWtwEeWjk67kw5SSNA" name="paymentDate" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvImtwEeWjk67kw5SSNA" annotatedElement="_3YtvIWtwEeWjk67kw5SSNA">
+              <body>The earliest date on which the payment may be made.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U70b5c835-6177-40ac-9341-6e1aa5b48f7f"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvI2twEeWjk67kw5SSNA" name="availableForClaimDate" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvJGtwEeWjk67kw5SSNA" annotatedElement="_3YtvI2twEeWjk67kw5SSNA">
+              <body>The earliest date on which the freelancer may claim the payment.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U70b5c835-6177-40ac-9341-6e1aa5b48f7f"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvJWtwEeWjk67kw5SSNA" name="paymentState" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvJmtwEeWjk67kw5SSNA" annotatedElement="_3YtvJWtwEeWjk67kw5SSNA">
+              <body>One or more 'state' flags defining a number of (as yet to be defined) HR properties in a number of (to be defined) dimensions.  e.g. Payment Held, Payment Claimed, etc.  Please note that both of the above could apply simultaneously</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#U46ea2d61-d69f-47a5-8fbf-2bfb856db066"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YtvJ2twEeWjk67kw5SSNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YtvKGtwEeWjk67kw5SSNA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvKWtwEeWjk67kw5SSNA" name="documentNumber" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvKmtwEeWjk67kw5SSNA" annotatedElement="_3YtvKWtwEeWjk67kw5SSNA">
+              <body>The Document Number is a unique value which identifies the 'invoice' which triggers the scheduled payment.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="../CLDM/datatypes.profile.uml#U2974276a-0e63-4ad8-80da-50ff897cff86"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvK2twEeWjk67kw5SSNA" name="scheduledPayment" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvLGtwEeWjk67kw5SSNA" annotatedElement="_3YtvK2twEeWjk67kw5SSNA">
+              <body>The is the total - including VAT - of the scheduled payment (a currency and an amount).</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3YtvLWtwEeWjk67kw5SSNA" name="vatAmount" visibility="public">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3YtvLmtwEeWjk67kw5SSNA" annotatedElement="_3YtvLWtwEeWjk67kw5SSNA">
+              <body>The is the VAT included in the scheduled payment (a currency and an amount).</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../CLDM/cldm.uml#Uc8dc1a88-02f8-4626-a914-3b30eb14cdf3"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kNSAMGwFEeWjk67kw5SSNA" informationSource="_3YvkOmtwEeWjk67kw5SSNA" informationTarget="_3YwLX2twEeWjk67kw5SSNA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_bxw5wGtzEeWjk67kw5SSNA" name="BookingComponentPayment" memberEnd="_bx0kIGtzEeWjk67kw5SSNA _bx1yQGtzEeWjk67kw5SSNA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bxzWAGtzEeWjk67kw5SSNA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bxzWAWtzEeWjk67kw5SSNA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <generalization xmi:type="uml:Generalization" xmi:id="_noaXoGtzEeWjk67kw5SSNA" general="_3YvkO2twEeWjk67kw5SSNA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bx0kIGtzEeWjk67kw5SSNA" name="scheduledpayment" type="_3YtvH2twEeWjk67kw5SSNA" association="_bxw5wGtzEeWjk67kw5SSNA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bx1yQGtzEeWjk67kw5SSNA" name="freelancerbookingcomponent" type="_3YtvS2twEeWjk67kw5SSNA" association="_bxw5wGtzEeWjk67kw5SSNA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X85zsGwFEeWjk67kw5SSNA" memberEnd="_X86awWwFEeWjk67kw5SSNA _X86awmwFEeWjk67kw5SSNA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X85zsWwFEeWjk67kw5SSNA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X86awGwFEeWjk67kw5SSNA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_X86awmwFEeWjk67kw5SSNA" name="employee" type="_nXEyoHvGEeSeN6oPwrOgqQ" association="_X85zsGwFEeWjk67kw5SSNA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fST7AGwFEeWjk67kw5SSNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fSXlYGwFEeWjk67kw5SSNA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_X86awWwFEeWjk67kw5SSNA" name="expenseclaim" type="_3YvkOGtwEeWjk67kw5SSNA" association="_X85zsGwFEeWjk67kw5SSNA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_excCkGwFEeWjk67kw5SSNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_exiJMGwFEeWjk67kw5SSNA" value="*"/>
+        </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_x0lTUHvGEeSeN6oPwrOgqQ" name="Payroll"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_0FkegHvGEeSeN6oPwrOgqQ" name="Finance">
       <packagedElement xmi:type="uml:Package" xmi:id="_CD_3EJTHEeSe2oMKyYakCA" name="Accounting">
         <packagedElement xmi:type="uml:Class" xmi:id="_baYTsJTLEeSe2oMKyYakCA" name="Posting" isAbstract="true">
